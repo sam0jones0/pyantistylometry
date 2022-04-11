@@ -1,15 +1,16 @@
 ## Initial Research Notes
 
 ### Key Features:
-- Frequency of uppercase words (see whiteprints feature set for others)
-- Number of words that occur exactly once in the text.
-- Word-based features are limited to stylistic “function words” (https://en.wikipedia.org/wiki/Function_word)
+- Whiteprints feature set.
+- Word-based features are limited to stylistic [“function words”](https://en.wikipedia.org/wiki/Function_word) / "principal component analysis technique from statistics on function word usage" -- Rao, J. R., & Rohatgi, P. (2000)
 - Frequency of bi-words (two words occurring in a certain order) and tri-words (three words occurring in a certain order)?
 - Bigrams (two characters in a row) and trigrams (three characters) and other n-grams?
 - The question is basically this: what is the ‘signal’ and what is the ‘noise’? What can be used to discriminate between many potential authors or options and pick the right one?
 - Writer invariant, also called authorial invariant or author's invariant
 - word frequencies since these features are generally acknowledged to be effective for authorship attribution and are transparent, which allows the author to easily incorporate the information for document modification purposes.
 - Support vector machines (SVMs)
+- "Statistical Method using the [Signature Stylometric System](https://www.philocomp.net/texts/signature.htm)" -- Kacmarcik, G., & Gamon, M. (2006, July)
+- "The general approach of this method is to examine how each author chooses synonyms. The theory behind the method is that when a word has a large number of synonyms to choose from, the choice the author makes is significant in understanding his or her writing style." -- Kacmarcik, G., & Gamon, M. (2006, July)
 
 ### Adversarial:
 - Proper spelling and grammar, and avoiding region specific spelling, among other things like the over use of slang, memes, and shorthand (Chat speak…etc).
@@ -22,22 +23,28 @@
 - Insertion of false random trigrams/n-grams
 - Random misspelling perhaps better than enforced perfect spelling as spellchecker may miss something.
 - "The first step is to identify the set of authors K(including A) that could have possibly written the document. This can be a set of co-workers or a set of authors who have published on the topic. Once the authors have been selected, a suitable corpus for each author needs to be gathered. This can be emails or newsgroup postings or other documents."  -- Kacmarcik, G., & Gamon, M. (2006, July)
+- all three methods did much worse in the face of an imitation attack than an obfuscation attack in detecting the correct author.  -- Kacmarcik, G., & Gamon, M. (2006, July)
 
 ### Blogs:
 - https://33bits.wordpress.com/2012/02/20/is-writing-style-sufficient-to-deanonymize-material-posted-online/
 - https://paranoidsbible.tumblr.com/post/182527122939/preventing-stylometry
 - https://programminghistorian.org/en/lessons/introduction-to-stylometry-with-python
 - https://peterkirby.com/basic-stylometry-101.html
-- https://33bits.wordpress.com/2012/02/20/is-writing-style-sufficient-to-deanonymize-material-posted-online/
+- https://33bits.wordpress.com/2012/02/20/is-writing-style-sufficient-to-deanonymize-material-posted-online/+
 
 ### Existing Solutions:
 - https://github.com/psal/anonymouth
 - https://github.com/travis-crow/Worden/
 - https://www.philocomp.net/texts/signature.htm
+- https://github.com/pagea/unstyle
+- [Python 2 implementation of writeprint-static feature extractors.](https://gist.github.com/pagea/b22288087a8093af1f3a)
 
 ### Existing Stylometry Libs:
 - https://github.com/jpotts18/stylometry/issues/12
 - https://github.com/psal/jstylo
+- https://github.com/analyticascent/stylext
+- https://github.com/evllabs/JGAAP
+- https://github.com/SupervisedStylometry/SuperStyl
 
 ### Concepts:
 - https://en.wikipedia.org/wiki/Latent_Dirichlet_allocation
@@ -47,7 +54,7 @@
 original form to the word "run".
 
 ### Motivations:
-- "the desire to avoid retribution from an employer or government agency. Beyond the issue of personal privacy, the public good is often served by whistle-blowers who expose wrong- doing in corporations and governments. The loss of an expectation of privacy can result in a chill- ing effect where individuals are too afraid to draw attention to a problem, because they fear being discovered and punished for their actions." -- Kacmarcik, G., & Gamon, M. (2006, July)
+- "the desire to avoid retribution from an employer or government agency. Beyond the issue of personal privacy, the public good is often served by whistle-blowers who expose wrong-doing in corporations and governments. The loss of an expectation of privacy can result in a chilling effect where individuals are too afraid to draw attention to a problem, because they fear being discovered and punished for their actions." -- Kacmarcik, G., & Gamon, M. (2006, July)
 
 ### Caveats of This Tool
 - Verification effort still required. Not a one shot and done.
@@ -58,8 +65,9 @@ original form to the word "run".
 
 ### Research Papers
 - (READ) Kacmarcik, G., & Gamon, M. (2006, July). Obfuscating document stylometry to preserve author anonymity. In Proceedings of the COLING/ACL 2006 Main Conference Poster Sessions (pp. 444-451).
-- (__METHODOLOGY__) Brennan, M. R., & Greenstadt, R. (2009, April). Practical attacks against authorship recognition techniques. In Twenty-First IAAI Conference.
+- (READ) Brennan, M. R., & Greenstadt, R. (2009, April). Practical attacks against authorship recognition techniques. In Twenty-First IAAI Conference.
 - Brennan, M., Afroz, S., & Greenstadt, R. (2012). Adversarial stylometry: Circumventing authorship recognition to preserve privacy and anonymity. ACM Transactions on Information and System Security (TISSEC), 15(3), 1-22.
+- (READ) Rao, J. R., & Rohatgi, P. (2000). Can pseudonymity really guarantee privacy?. In 9th USENIX Security Symposium (USENIX Security 00).
 - Emmery, C., Kádár, Á., & Chrupała, G. (2021). Adversarial stylometry in the wild: Transferable lexical substitution attacks on author profiling. arXiv preprint arXiv:2101.11310.
 - Brocardo, M. L., Traore, I., Saad, S., & Woungang, I. (2013, May). Authorship verification for short messages using stylometry. In 2013 International Conference on Computer, Information and Telecommunication Systems (CITS) (pp. 1-6). IEEE.
 - Abbasi, A., & Chen, H. (2008). Writeprints: A stylometric approach to identity-level identification and similarity detection in cyberspace. ACM Transactions on Information Systems (TOIS), 26(2), 1-29.

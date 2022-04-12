@@ -25,7 +25,9 @@
 - "The first step is to identify the set of authors K(including A) that could have possibly written the document. This can be a set of co-workers or a set of authors who have published on the topic. Once the authors have been selected, a suitable corpus for each author needs to be gathered. This can be emails or newsgroup postings or other documents."  -- Kacmarcik, G., & Gamon, M. (2006, July)
 - all three methods did much worse in the face of an imitation attack than an obfuscation attack in detecting the correct author.  -- Kacmarcik, G., & Gamon, M. (2006, July)
 
-### Blogs:
+### Sites / Blogs:
+- https://pan.webis.de/
+- https://sciendo.com/journal/popets
 - https://33bits.wordpress.com/2012/02/20/is-writing-style-sufficient-to-deanonymize-material-posted-online/
 - https://paranoidsbible.tumblr.com/post/182527122939/preventing-stylometry
 - https://programminghistorian.org/en/lessons/introduction-to-stylometry-with-python
@@ -45,6 +47,7 @@
 - https://github.com/analyticascent/stylext
 - https://github.com/evllabs/JGAAP
 - https://github.com/SupervisedStylometry/SuperStyl
+- https://github.com/pan-webis-de
 
 ### Concepts:
 - https://en.wikipedia.org/wiki/Latent_Dirichlet_allocation
@@ -63,28 +66,6 @@ original form to the word "run".
 - "Proposing feature insertion sites can be more problematic." -- Kacmarcik, G., & Gamon, M. (2006, July)
 - "modifying the document to increase or decrease the frequency of a term will necessarily impact the frequencies of other terms and thus affect the document's stylometric signature." -- Kacmarcik, G., & Gamon, M. (2006),
 
-### Research Papers
-- (READ) Kacmarcik, G., & Gamon, M. (2006, July). Obfuscating document stylometry to preserve author anonymity. In Proceedings of the COLING/ACL 2006 Main Conference Poster Sessions (pp. 444-451).
-- (READ) Brennan, M. R., & Greenstadt, R. (2009, April). Practical attacks against authorship recognition techniques. In Twenty-First IAAI Conference.
-- Brennan, M., Afroz, S., & Greenstadt, R. (2012). Adversarial stylometry: Circumventing authorship recognition to preserve privacy and anonymity. ACM Transactions on Information and System Security (TISSEC), 15(3), 1-22.
-- (READ) Rao, J. R., & Rohatgi, P. (2000). Can pseudonymity really guarantee privacy?. In 9th USENIX Security Symposium (USENIX Security 00).
-- Emmery, C., Kádár, Á., & Chrupała, G. (2021). Adversarial stylometry in the wild: Transferable lexical substitution attacks on author profiling. arXiv preprint arXiv:2101.11310.
-- Brocardo, M. L., Traore, I., Saad, S., & Woungang, I. (2013, May). Authorship verification for short messages using stylometry. In 2013 International Conference on Computer, Information and Telecommunication Systems (CITS) (pp. 1-6). IEEE.
-- Abbasi, A., & Chen, H. (2008). Writeprints: A stylometric approach to identity-level identification and similarity detection in cyberspace. ACM Transactions on Information Systems (TOIS), 26(2), 1-29.
-- Horton, T. B. (1987). The Effectiveness of the Stylometry of Function words in Discriminating between Shakespeare and Fletcher.
-- Neal, T., Sundararajan, K., Fatima, A., Yan, Y., Xiang, Y., & Woodard, D. (2017). Surveying stylometry techniques and applications. ACM Computing Surveys (CSuR), 50(6), 1-36.
-- Afroz, S., Islam, A. C., Stolerman, A., Greenstadt, R., & McCoy, D. (2014, May). Doppelgänger finder: Taking stylometry to the underground. In 2014 IEEE Symposium on Security and Privacy (pp. 212-226). IEEE.
-- Tweedie, F. J., Singh, S., & Holmes, D. I. (1996). Neural network applications in stylometry: The Federalist Papers. Computers and the Humanities, 30(1), 1-10.
-- Narayanan, A., Paskov, H., Gong, N. Z., Bethencourt, J., Stefanov, E., Shin, E. C. R., & Song, D. (2012, May). On the feasibility of internet-scale author identification. In 2012 IEEE Symposium on Security and Privacy (pp. 300-314). IEEE.
-- Narayanan, A., & Shmatikov, V. (2008, May). Robust de-anonymization of large sparse datasets. In 2008 IEEE Symposium on Security and Privacy (sp 2008) (pp. 111-125). IEEE.
-- Narayanan, A., & Shmatikov, V. (2019). Robust de-anonymization of large sparse datasets: a decade later. May, 21, 2019.
-- Brocardo, M. L., Traore, I., & Woungang, I. (2015). Authorship verification of e-mail and tweet messages applied for continuous authentication. Journal of Computer and System Sciences, 81(8), 1429-1440.
-- Brocardo, M. L., Traore, I., & Woungang, I. (2014, May). Toward a framework for continuous authentication using stylometry. In 2014 IEEE 28th International Conference on Advanced Information Networking and Applications (pp. 106-115). IEEE.
-- Vosoughi, S., Zhou, H., & Roy, D. (2015, December). Digital stylometry: Linking profiles across social networks. In International Conference on Social Informatics (pp. 164-177). Springer, Cham.
-- Zheng, R., Li, J., Chen, H., & Huang, Z. (2006). A framework for authorship identification of online messages: Writing‐style features and classification techniques. Journal of the American society for information science and technology, 57(3), 378-393.
-- Daelemans, W. (2013, March). Explanation in computational stylometry. In International conference on intelligent text processing and computational linguistics (pp. 451-462). Springer, Berlin, Heidelberg.
-- Koppel, M., Schler, J., & Mughaz, D. (2004, January). Text categorization for authorship verification. In Eighth International Symposium on Artificial Intelligence and Mathematics. Fort Lauderdale, Florida, http://rutcor. rutgers. edu/~ amai/aimath04/SpecialSessions/Koppel-aimath04. pdf.
-
 ### Round-trip machine translation example:
 
 #### Original
@@ -98,3 +79,38 @@ With the basics of English, you build what you mean, and then you hear a service
 
 #### SpaCy Lemminization
 Take the basic of the english language, you construct whatever you wish to say and then use a service like Google Translate and have it translate to another language. Once that be do, you translate it once more to another language and then back to English. With minor "fix" you’ll be able to create a style of post that read as if it be write by a non-native english speaker.
+
+
+### Research Papers
+- (READ) Kacmarcik, G., & Gamon, M. (2006, July). Obfuscating document stylometry to preserve author anonymity. In Proceedings of the COLING/ACL 2006 Main Conference Poster Sessions (pp. 444-451).
+- (READ) Brennan, M. R., & Greenstadt, R. (2009, April). Practical attacks against authorship recognition techniques. In Twenty-First IAAI Conference.
+- (READ) Brennan, M., Afroz, S., & Greenstadt, R. (2012). Adversarial stylometry: Circumventing authorship recognition to preserve privacy and anonymity. ACM Transactions on Information and System Security (TISSEC), 15(3), 1-22.
+- (READ) Rao, J. R., & Rohatgi, P. (2000). Can pseudonymity really guarantee privacy?. In 9th USENIX Security Symposium (USENIX Security 00).
+- (READ) McDonald, A. W., Afroz, S., Caliskan, A., Stolerman, A., & Greenstadt, R. (2012, July). Use fewer instances of the letter “i”: Toward writing style anonymization. In International Symposium on Privacy Enhancing Technologies Symposium (pp. 299-318). Springer, Berlin, Heidelberg.
+- (READ) Li, J., Ji, S., Du, T., Li, B., & Wang, T. (2018). Textbugger: Generating adversarial text against real-world applications. arXiv preprint arXiv:1812.05271.
+- (READ) Koppel, M., & Winter, Y. (2014). Determining if two documents are written by the same author. Journal of the Association for Information Science and Technology, 65(1), 178-187.
+- Emmery, C., Kádár, Á., & Chrupała, G. (2021). Adversarial stylometry in the wild: Transferable lexical substitution attacks on author profiling. arXiv preprint arXiv:2101.11310.
+- Potthast, M., Hagen, M., & Stein, B. (2016). Author Obfuscation: Attacking the State of the Art in Authorship Verification. In CLEF (Working Notes) (pp. 716-749).
+- Karadzhov, G., Mihaylova, T., Kiprov, Y., Georgiev, G., Koychev, I., & Nakov, P. (2017, September). The case for being average: A mediocrity approach to style masking and author obfuscation. In International Conference of the Cross-Language Evaluation Forum for European Languages (pp. 173-185). Springer, Cham.
+- Koppel, M., Schler, J., & Argamon, S. (2011). Authorship attribution in the wild. Language Resources and Evaluation, 45(1), 83-94.
+- (READ) Saedi, C., & Dras, M. (2020, December). Large Scale Author Obfuscation Using Siamese Variational Auto-Encoder: The SiamAO System. In Proceedings of the Ninth Joint Conference on Lexical and Computational Semantics (pp. 179-189).
+- Eger, S., Şahin, G. G., Rücklé, A., Lee, J. U., Schulz, C., Mesgar, M., ... & Gurevych, I. (2019). Text processing like humans do: Visually attacking and shielding NLP systems. arXiv preprint arXiv:1903.11508.
+- Brocardo, M. L., Traore, I., Saad, S., & Woungang, I. (2013, May). Authorship verification for short messages using stylometry. In 2013 International Conference on Computer, Information and Telecommunication Systems (CITS) (pp. 1-6). IEEE.
+- Abbasi, A., & Chen, H. (2008). Writeprints: A stylometric approach to identity-level identification and similarity detection in cyberspace. ACM Transactions on Information Systems (TOIS), 26(2), 1-29.
+- Bevendorff, J., Potthast, M., Hagen, M., & Stein, B. (2019, July). Heuristic authorship obfuscation. In Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics (pp. 1098-1108).
+- Narayanan, A., Paskov, H., Gong, N. Z., Bethencourt, J., Stefanov, E., Shin, E. C. R., & Song, D. (2012, May). On the feasibility of internet-scale author identification. In 2012 IEEE Symposium on Security and Privacy (pp. 300-314). IEEE.
+- Horton, T. B. (1987). The Effectiveness of the Stylometry of Function words in Discriminating between Shakespeare and Fletcher.
+- Neal, T., Sundararajan, K., Fatima, A., Yan, Y., Xiang, Y., & Woodard, D. (2017). Surveying stylometry techniques and applications. ACM Computing Surveys (CSuR), 50(6), 1-36.
+- Juola, P., & Vescovi, D. (2011, January). Analyzing stylometric approaches to author obfuscation. In IFIP International Conference on Digital Forensics (pp. 115-125). Springer, Berlin, Heidelberg.
+- Afroz, S., Islam, A. C., Stolerman, A., Greenstadt, R., & McCoy, D. (2014, May). Doppelgänger finder: Taking stylometry to the underground. In 2014 IEEE Symposium on Security and Privacy (pp. 212-226). IEEE.
+- Mansoorizadeh, M., Rahgooy, T., Aminiyan, M., & Eskandari, M. (2016). Author Obfuscation using WordNet and language models—notebook for PAN at CLEF 2016. In CLEF 2016 Evaluation Labs and Workshop–Working Notes Papers (pp. 5-8).
+- Tweedie, F. J., Singh, S., & Holmes, D. I. (1996). Neural network applications in stylometry: The Federalist Papers. Computers and the Humanities, 30(1), 1-10.
+- Narayanan, A., & Shmatikov, V. (2008, May). Robust de-anonymization of large sparse datasets. In 2008 IEEE Symposium on Security and Privacy (sp 2008) (pp. 111-125). IEEE.
+- Narayanan, A., & Shmatikov, V. (2019). Robust de-anonymization of large sparse datasets: a decade later. May, 21, 2019.
+- - Daelemans, W. (2013, March). Explanation in computational stylometry. In International conference on intelligent text processing and computational linguistics (pp. 451-462). Springer, Berlin, Heidelberg.
+- Brocardo, M. L., Traore, I., & Woungang, I. (2015). Authorship verification of e-mail and tweet messages applied for continuous authentication. Journal of Computer and System Sciences, 81(8), 1429-1440.
+- Brocardo, M. L., Traore, I., & Woungang, I. (2014, May). Toward a framework for continuous authentication using stylometry. In 2014 IEEE 28th International Conference on Advanced Information Networking and Applications (pp. 106-115). IEEE.
+- Vosoughi, S., Zhou, H., & Roy, D. (2015, December). Digital stylometry: Linking profiles across social networks. In International Conference on Social Informatics (pp. 164-177). Springer, Cham.
+- Zheng, R., Li, J., Chen, H., & Huang, Z. (2006). A framework for authorship identification of online messages: Writing‐style features and classification techniques. Journal of the American society for information science and technology, 57(3), 378-393.
+- Koppel, M., Schler, J., & Mughaz, D. (2004, January). Text categorization for authorship verification. In Eighth International Symposium on Artificial Intelligence and Mathematics. Fort Lauderdale, Florida, http://rutcor. rutgers. edu/~ amai/aimath04/SpecialSessions/Koppel-aimath04. pdf.
+

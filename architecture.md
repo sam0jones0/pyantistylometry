@@ -15,6 +15,7 @@
   - Option to use other translation APIs.
   - Google/bing translate support with warning.
 - Interactive Y/N/add-to-dict prompts for unknown/uncommon words or autocorrect ambiguities.
+- Remind user that they should already have attempted to write in a style different to their own, either in README or command line warning. Attempting to imitate a different writers specific style has been shown to be even more effective. -- Brennan, M., Afroz, S., & Greenstadt, R. (2012) 
 
 ### Verify Output
 - Test text output against available Stylometry libs (e.g. Jstylo)

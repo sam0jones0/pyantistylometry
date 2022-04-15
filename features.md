@@ -38,6 +38,7 @@
 - l3375p34k
   - "This means if we deliberately misspell important words, we can easily convert those important words to “unknown” (i.e., words not in the dictionary). The unknown words will be mapped to the “unknown” embedding vector in deep learning modeling. Our results strongly indicate that such simple strategy can effectively force text classification models to behave incorrectly." -- Li, J., Ji, S., Du, T., Li, B., & Wang, T. (2018)
 - GloVe: Global Vectors for Word Representation: https://github.com/stanfordnlp/GloVe
+- BERT-based Lexical Substitution -- Zhou, W., Ge, T., Xu, K., Wei, F., & Zhou, M. (2019, July).
 
 ### Brennan, M., Afroz, S., & Greenstadt, R. (2012)
 
@@ -69,3 +70,14 @@
   - (5) Substitute-W(Sub-W): Replace a word with its topk nearest neighbors in a context-aware word vector space.
   - Original / Insert / Delete / Swap / Sub-C / Sub-W
   - foolish / f oolish / folish / fooilsh / fo0lish / silly
+
+### Emmery, C., Kádár, Á., & Chrupała, G. (2021)
+- Our attack framework extends TextFooler (TF, Jin et al., 2020) in several ways. First, a substitute gender classifier is trained, from which the logit output given a document is used to rank words by their prediction importance through an omission score(Section 3.1). For the top most important words, substitute candidates are proposed, for which we add two additional techniques (Section 3.2). These candidates can be checked and filtered on consistency with the original words (by their POS tags, for example), accepted as-is, or re-ranked (Section 3.3). For the latter, we add a scoring method. Finally, the remaining candidates are used for itera- tive substitution until TF’s stopping criterion is met(i.e., the prediction changes, or candidates run out)
+- To create D<sub>ADV</sub> , a minimum number of edits is preferred, and thus we rank all words in D by their omission score (similar to e.g., Kádár et al.,2017) according to f' (omission score in Algorithm 1)
+- Lexical Substitution Attacks (see p5, section 4.2 for details)
+  - Synonym Substitution (WS)
+  - Masked Substitution (MB): The embedding-based substitutions can be replaced by a language model predicting the contextually most likely token. BERT (Devlin et al., 2019)—a bi-directional encoder (Vaswani et al., 2017) trained through masked language modeling and next-sentence prediction—makes this fairly trivial.
+  - Dropout Substitution (DB) A method to circumvent the former (i.e., BERT’s masked prediction limitations for lexical substitution), was presented by Zhou et al. (2019).
+  - Heuristic Substitution: i.e. Textbugger like perturbations. 
+- Candidate Filtering and Re-ranking (semantic consistency checks)
+  - Part-of-Speech and Document Encoding: Remove subtitute token if POS tag differs from original.

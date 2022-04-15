@@ -11,6 +11,8 @@
 - Support vector machines (SVMs)
 - "Statistical Method using the [Signature Stylometric System](https://www.philocomp.net/texts/signature.htm)" -- Kacmarcik, G., & Gamon, M. (2006, July)
 - "The general approach of this method is to examine how each author chooses synonyms. The theory behind the method is that when a word has a large number of synonyms to choose from, the choice the author makes is significant in understanding his or her writing style." -- Kacmarcik, G., & Gamon, M. (2006, July)
+- "A simple linear SVM with word and character n-gram features and minimal parameter tuning can identify the gender and the language variety (for English, Spanish, Arabic and Portuguese) of Twitter users with very high accuracy." -- Basile, A., Dwyer, G., Medvedeva, M., Rawee, J., Haagsma, H., & Nissim, M. (2018, September)
+- "Logistic Regression Logistic Regression (LR)trained on tf·idf using uni and bi-gram features proved a strong baseline in author profiling in prior work." -- Emmery, C., Kádár, Á., & Chrupała, G. (2021)
 
 ### Adversarial:
 - Proper spelling and grammar, and avoiding region specific spelling, among other things like the over use of slang, memes, and shorthand (Chat speak…etc).
@@ -48,6 +50,7 @@
 - https://github.com/evllabs/JGAAP
 - https://github.com/SupervisedStylometry/SuperStyl
 - https://github.com/pan-webis-de
+- https://aabeta.herokuapp.com/#/attribution
 
 ### Concepts:
 - https://en.wikipedia.org/wiki/Latent_Dirichlet_allocation
@@ -89,9 +92,16 @@ Take the basic of the english language, you construct whatever you wish to say a
 - (READ) McDonald, A. W., Afroz, S., Caliskan, A., Stolerman, A., & Greenstadt, R. (2012, July). Use fewer instances of the letter “i”: Toward writing style anonymization. In International Symposium on Privacy Enhancing Technologies Symposium (pp. 299-318). Springer, Berlin, Heidelberg.
 - (READ) Li, J., Ji, S., Du, T., Li, B., & Wang, T. (2018). Textbugger: Generating adversarial text against real-world applications. arXiv preprint arXiv:1812.05271.
 - (READ) Koppel, M., & Winter, Y. (2014). Determining if two documents are written by the same author. Journal of the Association for Information Science and Technology, 65(1), 178-187.
+- (READ) Shetty, R., Schiele, B., & Fritz, M. (2018). {A4NT}: Author Attribute Anonymity by Adversarial Training of Neural Machine Translation. In 27th USENIX Security Symposium (USENIX Security 18) (pp. 1633-1650).
 - Emmery, C., Kádár, Á., & Chrupała, G. (2021). Adversarial stylometry in the wild: Transferable lexical substitution attacks on author profiling. arXiv preprint arXiv:2101.11310.
 - Potthast, M., Hagen, M., & Stein, B. (2016). Author Obfuscation: Attacking the State of the Art in Authorship Verification. In CLEF (Working Notes) (pp. 716-749).
+- Le, H., Safavi-Naini, R., & Galib, A. (2015, August). Secure obfuscation of authoring style. In IFIP International Conference on Information Security Theory and Practice (pp. 88-103). Springer, Cham.
+- Xu, Q., Xu, C., & Qu, L. (2019). Alter: Auxiliary text rewriting tool for natural language generation. arXiv preprint arXiv:1909.06564.
+- Emmery, C., Manjavacas, E., & Chrupała, G. (2018). Style obfuscation by invariance. arXiv preprint arXiv:1805.07143.
+- Basile, A., Dwyer, G., Medvedeva, M., Rawee, J., Haagsma, H., & Nissim, M. (2018, September). Simply the best: minimalist system trumps complex models in author profiling. In International Conference of the Cross-Language Evaluation Forum for European Languages (pp. 143-156). Springer, Cham.
+- Kabbara, J., & Cheung, J. C. K. (2016, November). Stylistic transfer in natural language generation systems using recurrent neural networks. In Proceedings of the Workshop on Uphill Battles in Language Processing: Scaling Early Achievements to Robust Methods (pp. 43-47).
 - Karadzhov, G., Mihaylova, T., Kiprov, Y., Georgiev, G., Koychev, I., & Nakov, P. (2017, September). The case for being average: A mediocrity approach to style masking and author obfuscation. In International Conference of the Cross-Language Evaluation Forum for European Languages (pp. 173-185). Springer, Cham.
+- Bo, H., Ding, S. H., Fung, B., & Iqbal, F. (2019). ER-AE: Differentially Private Text Generation for Authorship Anonymization. arXiv preprint arXiv:1907.08736.
 - Koppel, M., Schler, J., & Argamon, S. (2011). Authorship attribution in the wild. Language Resources and Evaluation, 45(1), 83-94.
 - (READ) Saedi, C., & Dras, M. (2020, December). Large Scale Author Obfuscation Using Siamese Variational Auto-Encoder: The SiamAO System. In Proceedings of the Ninth Joint Conference on Lexical and Computational Semantics (pp. 179-189).
 - Eger, S., Şahin, G. G., Rücklé, A., Lee, J. U., Schulz, C., Mesgar, M., ... & Gurevych, I. (2019). Text processing like humans do: Visually attacking and shielding NLP systems. arXiv preprint arXiv:1903.11508.
@@ -107,10 +117,11 @@ Take the basic of the english language, you construct whatever you wish to say a
 - Tweedie, F. J., Singh, S., & Holmes, D. I. (1996). Neural network applications in stylometry: The Federalist Papers. Computers and the Humanities, 30(1), 1-10.
 - Narayanan, A., & Shmatikov, V. (2008, May). Robust de-anonymization of large sparse datasets. In 2008 IEEE Symposium on Security and Privacy (sp 2008) (pp. 111-125). IEEE.
 - Narayanan, A., & Shmatikov, V. (2019). Robust de-anonymization of large sparse datasets: a decade later. May, 21, 2019.
-- - Daelemans, W. (2013, March). Explanation in computational stylometry. In International conference on intelligent text processing and computational linguistics (pp. 451-462). Springer, Berlin, Heidelberg.
+- Daelemans, W. (2013, March). Explanation in computational stylometry. In International conference on intelligent text processing and computational linguistics (pp. 451-462). Springer, Berlin, Heidelberg.
 - Brocardo, M. L., Traore, I., & Woungang, I. (2015). Authorship verification of e-mail and tweet messages applied for continuous authentication. Journal of Computer and System Sciences, 81(8), 1429-1440.
 - Brocardo, M. L., Traore, I., & Woungang, I. (2014, May). Toward a framework for continuous authentication using stylometry. In 2014 IEEE 28th International Conference on Advanced Information Networking and Applications (pp. 106-115). IEEE.
+- Stolerman, A., Overdorf, R., Afroz, S., & Greenstadt, R. (2014, January). Breaking the closed-world assumption in stylometric authorship attribution. In IFIP International Conference on Digital Forensics (pp. 185-205). Springer, Berlin, Heidelberg.
 - Vosoughi, S., Zhou, H., & Roy, D. (2015, December). Digital stylometry: Linking profiles across social networks. In International Conference on Social Informatics (pp. 164-177). Springer, Cham.
 - Zheng, R., Li, J., Chen, H., & Huang, Z. (2006). A framework for authorship identification of online messages: Writing‐style features and classification techniques. Journal of the American society for information science and technology, 57(3), 378-393.
 - Koppel, M., Schler, J., & Mughaz, D. (2004, January). Text categorization for authorship verification. In Eighth International Symposium on Artificial Intelligence and Mathematics. Fort Lauderdale, Florida, http://rutcor. rutgers. edu/~ amai/aimath04/SpecialSessions/Koppel-aimath04. pdf.
-
+- Zhou, W., Ge, T., Xu, K., Wei, F., & Zhou, M. (2019, July). BERT-based lexical substitution. In Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics (pp. 3368-3373).
